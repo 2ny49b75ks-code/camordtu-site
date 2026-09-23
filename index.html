@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CaMordTu</title>
+<style>
+  :root {
+    --navy: #0a1a35;
+    --navy-deep: #051020;
+    --gold: #c7a13a;
+    --gold-light: #e9d9a8;
+    --cream: #f6f1e4;
+  }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: radial-gradient(circle at 50% 20%, var(--navy) 0%, var(--navy-deep) 70%);
+    color: var(--cream);
+  }
+  main { text-align: center; padding: 20px; }
+  h1 {
+    color: var(--gold-light);
+    font-size: 2rem;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+  p.tag { color: rgba(246,241,228,0.75); margin-top: 0; }
+  nav { margin-top: 28px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  a.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+    color: var(--gold-light);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  a.button:hover { background: rgba(199,161,58,0.15); }
+</style>
+</head>
+<body>
+<main>
+  <h1>CaMordTu</h1>
+  <p class="tag">Votre guide complet de pêche au Québec</p>
+  <nav>
+    <a class="button" href="support.html">Assistance</a>
+    <a class="button" href="privacy.html">Politique de confidentialité</a>
+  </nav>
+</main>
+</body>
+</html>
