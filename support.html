@@ -4,94 +4,60 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Assistance — CaMordTu</title>
-<style>
-  :root {
-    --navy: #0a1a35;
-    --navy-deep: #051020;
-    --gold: #c7a13a;
-    --gold-light: #e9d9a8;
-    --cream: #f6f1e4;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    background: var(--navy-deep);
-    color: var(--cream);
-    line-height: 1.6;
-  }
-  header {
-    background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
-    padding: 40px 20px 28px;
-    text-align: center;
-    border-bottom: 3px solid var(--gold);
-  }
-  header h1 {
-    margin: 0 0 4px;
-    font-size: 1.6rem;
-    color: var(--gold-light);
-    letter-spacing: 0.5px;
-  }
-  header p {
-    margin: 0;
-    color: rgba(246,241,228,0.75);
-    font-size: 0.95rem;
-  }
-  main {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 32px 20px 64px;
-  }
-  h2 {
-    color: var(--gold-light);
-    font-size: 1.1rem;
-    margin-top: 2em;
-    border-bottom: 1px solid rgba(199,161,58,0.35);
-    padding-bottom: 6px;
-  }
-  a { color: var(--gold-light); }
-  .card {
-    background: rgba(199,161,58,0.08);
-    border: 1px solid rgba(199,161,58,0.35);
-    border-radius: 10px;
-    padding: 18px 20px;
-    margin-top: 1em;
-  }
-  .back {
-    display: inline-block;
-    margin-top: 2em;
-    font-size: 0.9rem;
-  }
-</style>
+<meta name="description" content="Assistance CaMordTu : contact, questions fréquentes sur le mode hors ligne, la réglementation et le carnet de pêche.">
+<meta name="theme-color" content="#173060">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Nunito:wght@900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<header>
-  <h1>CaMordTu</h1>
-  <p>Assistance</p>
-</header>
-<main>
-  <p>Une question, un bug à signaler, ou une suggestion pour CaMordTu ? Écrivez-nous directement,
-  on répond personnellement à chaque message.</p>
-
-  <div class="card">
-    <strong>Courriel :</strong> <a href="mailto:j_david@live.ca?subject=CaMordTu%20-%20Assistance">j_david@live.ca</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/apple-touch-icon.png" alt="" width="40" height="40"><span class="wordmark">CaMordTu</span></a>
+    <div class="top-right">
+      <div class="lang-toggle"><a href="support.html" lang="fr" class="active">FR</a><a href="support-en.html" lang="en">EN</a></div>
+      <a class="btn-gold solid" href="https://apps.apple.com/ca/app/camordtu/id6815033212">Télécharger</a>
+    </div>
   </div>
+</header>
+<div class="page-head">
+  <img class="crest-sm" src="assets/img/logo.png" alt="" width="92" height="92">
+  <h1 class="engraved">Assistance</h1>
+  <p>On répond personnellement à chaque message</p>
+</div>
+<main class="doc">
+  <p>Une question, un bug à signaler, un lac ou une pourvoirie manquante, ou une suggestion pour CaMordTu? Écrivez-nous directement — chaque message est lu et reçoit une réponse personnelle.</p>
+  <div class="card"><strong>Courriel :</strong> <a href="mailto:j_david@live.ca?subject=CaMordTu">j_david@live.ca</a><br><span style="color:var(--muted)">Précisez si possible votre modèle d'iPhone et votre version d'iOS.</span></div>
 
   <h2>Questions fréquentes</h2>
-  <p><strong>Est-ce que l'app fonctionne hors ligne ?</strong><br>
-  Oui — les zones de pêche, la réglementation, les lacs, les espèces et votre carnet de pêche
-  sont tous consultables sans connexion Internet, une fois l'app installée.</p>
+  <p class="faq-q">L'app fonctionne-t-elle hors ligne?</p>
+  <p>Oui. Les zones de pêche, la réglementation, les lacs, les rivières, les cartes de profondeur, les espèces, les leurres, les pourvoiries et votre carnet de pêche sont tous consultables sans connexion Internet une fois l'app installée. La détection de zone utilise le GPS, qui fonctionne même sans réseau cellulaire.</p>
 
-  <p><strong>Mes prises sont-elles envoyées quelque part ?</strong><br>
-  Non. Votre carnet de pêche reste entièrement sur votre appareil. Voir notre
-  <a href="privacy.html">politique de confidentialité</a> pour le détail complet.</p>
+  <p class="faq-q">Pourquoi l'app ne trouve-t-elle pas ma zone?</p>
+  <p>Vérifiez que CaMordTu a accès à votre position : Réglages → CaMordTu → Position → « Lorsque l'app est active ». Sous un couvert forestier dense, laissez quelques secondes au GPS pour se stabiliser.</p>
 
-  <p><strong>La réglementation affichée est-elle officielle ?</strong><br>
-  CaMordTu intègre les règles générales de chaque zone du MFFP, avec un lien direct vers la
-  grille officielle du ministère pour les exceptions propres à certains plans d'eau — consultez
-  toujours la grille officielle en cas de doute.</p>
+  <p class="faq-q">Mes prises sont-elles envoyées quelque part?</p>
+  <p>Non. Votre carnet de pêche reste entièrement sur votre appareil. Voir notre <a href="privacy.html">politique de confidentialité</a>.</p>
 
-  <a class="back" href="./">← Retour</a>
+  <p class="faq-q">La réglementation affichée est-elle officielle?</p>
+  <p>CaMordTu intègre les règles générales de chaque zone publiées par le gouvernement du Québec, avec un lien direct vers la grille officielle pour les exceptions propres à certains plans d'eau. En cas de doute, la grille officielle a toujours le dernier mot. La réglementation est mise à jour dans l'app à chaque nouvelle saison de pêche.</p>
+
+  <p class="faq-q">Y a-t-il un abonnement?</p>
+  <p>Non. CaMordTu s'achète une seule fois sur l'App Store (6,99 $ CAD), sans abonnement ni achat intégré. Les mises à jour sont incluses.</p>
+
+  <p class="faq-q">L'app existe-t-elle sur Android?</p>
+  <p>Pas pour l'instant — CaMordTu est offerte sur iPhone (iOS 17 ou plus récent).</p>
+
+  <p><a href="./">← Retour à l'accueil</a></p>
 </main>
+<footer>
+  <div class="wrap">
+    <div class="foot-links"><a href="./">Accueil</a><a href="support.html">Assistance</a><a href="privacy.html">Confidentialité</a><a href="https://apps.apple.com/ca/app/camordtu/id6815033212">App Store</a></div>
+    <p>© 2026 JDG inc., Québec. Tous droits réservés.</p>
+  </div>
+</footer>
 </body>
 </html>
