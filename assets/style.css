@@ -118,7 +118,8 @@ nav.top-nav a:hover { color: var(--bronze-light); }
 .lang-toggle a { font-family: 'Cinzel', Georgia, serif; font-weight: 700; font-size: 0.75em; padding: 6px 11px; color: var(--muted); text-decoration: none; }
 .lang-toggle a.active { background: var(--gold-grad); color: #2a1a06; }
 .top-right .btn-gold { padding: 9px 18px; font-size: 0.78em; }
-@media (max-width: 900px) { nav.top-nav { display: none; } }
+@media (max-width: 1080px) { nav.top-nav { display: none; } }
+header.top .brand { flex: none; }
 @media (max-width: 480px) { .top-right .btn-gold { display: none; } }
 
 /* ---------- Hero ---------- */
