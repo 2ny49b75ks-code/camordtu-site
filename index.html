@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CaMordTu — L'app de pêche du Québec : zones, règlements, lacs</title>
-<meta name="description" content="L'app iPhone de pêche au Québec : votre zone et ses règlements par GPS, 3 224 lacs, cartes de profondeur, espèces, leurres et pourvoiries — hors ligne. 6,99 $.">
+<meta name="description" content="L'app iPhone et iPad de pêche au Québec : votre zone et ses règlements par GPS, 3 224 lacs, cartes de profondeur, espèces, leurres et pourvoiries — hors ligne. 6,99 $.">
 <meta name="theme-color" content="#173060">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -32,7 +32,7 @@
   "fr-CA",
   "en"
  ],
- "description": "L'app iPhone de pêche au Québec : votre zone et ses règlements par GPS, 3 224 lacs, cartes de profondeur, espèces, leurres et pourvoiries — hors ligne. 6,99 $.",
+ "description": "L'app iPhone et iPad de pêche au Québec : votre zone et ses règlements par GPS, 3 224 lacs, cartes de profondeur, espèces, leurres et pourvoiries — hors ligne. 6,99 $.",
  "url": "https://camordtu.netlify.app/",
  "image": "https://camordtu.netlify.app/assets/img/logo.png",
  "installUrl": "https://apps.apple.com/ca/app/camordtu/id6815033212",
@@ -80,6 +80,9 @@
   <symbol id="i-fire" viewBox="0 0 64 64"><g fill="none" stroke-linejoin="round" stroke-linecap="round"><path d="M32 8c4 10 14 14 12 26-1 8-6 12-12 12s-12-4-12-12c0-6 4-8 5-14 3 4 4 6 5 8 2-6 4-12 2-20z" stroke="#de9e73" stroke-width="3" fill="rgba(222,158,115,.25)"/><path d="M10 56l44-8M10 48l44 8" stroke="url(#g)" stroke-width="3.5"/></g></symbol>
   <symbol id="i-lock" viewBox="0 0 64 64"><g fill="none" stroke="url(#g)" stroke-width="3" stroke-linejoin="round"><rect x="12" y="28" width="40" height="28" rx="5"/><path d="M20 28v-8a12 12 0 0124 0v8"/><path d="M32 38v8" stroke-linecap="round"/></g></symbol>
   <symbol id="i-mail" viewBox="0 0 64 64"><g fill="none" stroke="url(#g)" stroke-width="3" stroke-linejoin="round"><rect x="8" y="14" width="48" height="36" rx="5"/><path d="M8 18l24 18 24-18"/></g></symbol>
+  <symbol id="i-river" viewBox="0 0 64 64"><g fill="none" stroke="url(#g)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8c18 4 22 12 10 20S8 44 26 56"/><path d="M40 10l10 4-4 10"/><path d="M50 14C40 18 34 22 36 28"/></g><circle cx="46" cy="46" r="7" fill="#c9302c" stroke="#f7e8bd" stroke-width="2"/></symbol>
+  <symbol id="i-rod" viewBox="0 0 64 64"><g fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="14" r="5"/><path d="M16 19v16l-6 12M16 35l8 12M16 26l10-4"/><path d="M26 22L58 6"/><path d="M58 6v26"/><path d="M6 56c8-4 14-4 22 0s14 4 22 0"/></g></symbol>
+  <symbol id="i-buoy" viewBox="0 0 64 64"><g fill="none" stroke="url(#g)" stroke-width="3"><circle cx="32" cy="32" r="22"/><circle cx="32" cy="32" r="10"/></g><g stroke="#de9e73" stroke-width="9" fill="none"><path d="M18 18l7 7M46 18l-7 7M18 46l7-7M46 46l-7-7"/></g></symbol>
   <symbol id="i-bullet" viewBox="0 0 64 24"><path d="M2 12c8-8 22-10 34-6 6 2 12 4 16 6-4 2-10 4-16 6-12 4-26 2-34-6z" fill="#c7a638"/><path d="M52 12l10-8v16z" fill="#c7a638"/><circle cx="12" cy="10.5" r="1.8" fill="#0d1f45"/></symbol>
 </svg>
 
@@ -118,9 +121,10 @@
         <ul class="hero-bullets">
           <li><svg viewBox="0 0 64 24"><use href="#i-bullet"/></svg>Des milliers de lacs, rivières et pourvoiries</li>
           <li><svg viewBox="0 0 64 24"><use href="#i-bullet"/></svg>Les règlements de pêche selon votre zone</li>
+          <li><svg viewBox="0 0 64 24"><use href="#i-bullet"/></svg>Nouveau : un plan hors ligne pour 45 rivières</li>
         </ul>
       </div>
-      <div class="phone"><img src="assets/img/01_accueil.webp" alt="Écran d'accueil de l'app CaMordTu" width="620" height="1344"></div>
+      <div class="phone"><img src="assets/img/app/fr-accueil.webp" alt="Écran d'accueil de l'app CaMordTu" width="620" height="1342"></div>
     </div>
   </div>
 </section>
@@ -129,7 +133,7 @@
   <div class="wrap">
     <div class="num-grid">
       <div class="num"><b>3 224</b><span>lacs répertoriés</span></div>
-      <div class="num"><b>30</b><span>grandes rivières</span></div>
+      <div class="num"><b>45</b><span>grandes rivières</span></div>
       <div class="num"><b>429</b><span>pourvoiries</span></div>
       <div class="num"><b>31</b><span>espèces réglementées</span></div>
       <div class="num"><b>12</b><span>cartes de profondeur</span></div>
@@ -145,15 +149,41 @@
     <h2 class="section-title engraved">Tout ce qu'il faut sur l'eau, dans une seule app</h2>
     <p class="section-lead">Pensée pour être utilisée directement sur le bateau ou au bord du lac, sans connexion Internet.</p>
     <div class="tile-grid">
-      <article class="tile"><svg class="icon"><use href="#i-zone"/></svg><h3>Ma zone</h3><p>Le GPS détecte instantanément dans quelle zone de pêche du Québec vous vous trouvez — calculé sur votre téléphone, sans réseau.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-rules"/></svg><h3>Réglementation</h3><p>Périodes, limites de prise, limites de longueur et engins autorisés pour chaque zone, avec lien direct vers la grille officielle du ministère.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-lake"/></svg><h3>Lacs et rivières</h3><p>3 224 lacs et les 30 grandes rivières à saumon, ouananiche et truite, avec municipalité, zone et espèces présentes.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-zone"/></svg><h3>Ma zone</h3><p>Le GPS détecte instantanément dans quelle zone de pêche du Québec vous vous trouvez, avec le lac le plus près et les espèces de la zone — calculé sur votre téléphone, sans réseau.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-rules"/></svg><h3>Réglementation et permis</h3><p>Les règles par zone et par espèce : périodes, limites de prise et de longueur, engins permis. Les tarifs officiels des permis et leur achat en ligne en un toucher.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-lake"/></svg><h3>Lacs</h3><p>3 224 lacs avec leur municipalité, leur zone, leurs espèces et la réglementation qui s'y applique.</p></article>
+      <article class="tile is-new"><span class="new-badge">Nouveau</span><svg class="icon"><use href="#i-river"/></svg><h3>Rivières et plan hors ligne</h3><p>45 grandes rivières, chacune avec un plan hors ligne : son tracé réel, ses villes, chutes, confluents et ponts, et votre position GPS — même sans réseau.</p></article>
       <article class="tile"><svg class="icon"><use href="#i-depth"/></svg><h3>Bathymétrie</h3><p>Cartes de profondeur des grands plans d'eau — Memphrémagog, Champlain, Mégantic, Saint-Jean et plus — pour repérer fosses et hauts-fonds.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-fish"/></svg><h3>Espèces</h3><p>31 espèces réglementées, du doré jaune au maskinongé, avec photos, habitat, taille et techniques de pêche.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-lure"/></svg><h3>Leurres</h3><p>Un guide des leurres et un assistant qui vous suggère le bon choix selon l'espèce, la saison et les conditions du jour.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-cabin"/></svg><h3>Pourvoiries</h3><p>429 pourvoiries offrant la pêche partout au Québec : coordonnées, espèces pêchées, appel en un tap et itinéraire dans Plans.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-book"/></svg><h3>Journal de pêche</h3><p>Consignez vos prises — espèce, lieu, taille, leurre, photos — dans un carnet privé qui ne quitte jamais votre téléphone.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-fire"/></svg><h3>Histoires et légendes</h3><p>Trente récits de pêche du terroir québécois, à lire au coin du feu entre deux sorties.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-fish"/></svg><h3>Espèces</h3><p>31 espèces réglementées, du doré jaune au maskinongé, avec photos, leurres recommandés, lacs où les pêcher et « secret du pêcheur ».</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-lure"/></svg><h3>Leurres</h3><p>Un guide de 8 familles de leurres et l'assistant « Trouver mon leurre », qui tient compte de la saison, de la météo, de l'espèce, du plan d'eau et de la profondeur.</p></article>
+      <article class="tile is-new"><span class="new-badge">Nouveau</span><svg class="icon"><use href="#i-rod"/></svg><h3>Techniques</h3><p>Lancer léger et lourd, mouche, traîne, pêche sur glace et en embarcation : l'équipement, la façon de manier sa canne et des conseils pour débuter.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-cabin"/></svg><h3>Pourvoiries</h3><p>429 pourvoiries classées dans les 17 régions du Québec, par espèce, type de pêche et style d'aventure, avec appel, site web et itinéraire en un toucher.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-book"/></svg><h3>Journal de pêche</h3><p>Vos prises, vos photos et vos statistiques par espèce, lac et leurre, dans un carnet privé qui ne quitte jamais votre téléphone.</p></article>
+      <article class="tile is-new"><span class="new-badge">Nouveau</span><svg class="icon"><use href="#i-fire"/></svg><h3>Histoires et légendes</h3><p>Trente récits de pêche du terroir québécois, à lire ou à écouter : chaque histoire est narrée, en français et en anglais.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-buoy"/></svg><h3>Conseils</h3><p>La sécurité sur l'eau, de la trousse de premiers soins à l'extincteur 5BC, et des conseils d'un pêcheur à l'autre.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="split" aria-labelledby="plan-titre">
+  <div class="wrap">
+    <div class="split-grid reverse">
+      <div class="phone"><img src="assets/img/app/fr-plan.webp" alt="Plan hors ligne de la rivière Batiscan avec ses villes, chutes et confluents" width="620" height="1342" loading="lazy"></div>
+      <div>
+        <p class="eyebrow left">Nouveau · Plan hors ligne</p>
+        <h2 class="section-title engraved" id="plan-titre">Retrouvez-vous sur la rivière, même sans réseau</h2>
+        <p>Chacune des 45 rivières de CaMordTu a maintenant son plan intégré à l'app : le tracé réel de la rivière, avec ses villes, ses chutes, ses confluents et ses ponts.</p>
+        <p>Touchez « Me localiser » et votre position GPS apparaît sur le plan, avec la distance qui vous sépare de la rivière. Rien à télécharger, rien à charger sur place : tout fonctionne au fond du bois.</p>
+        <div class="panel" style="margin-top:26px">
+          <div class="panel-head">Sur chaque plan</div>
+          <ul>
+            <li class="plain">Le tracé complet de la rivière</li>
+            <li class="plain">Villes, chutes, confluents et ponts</li>
+            <li class="plain">Votre position et l'échelle en km</li>
+            <li class="plain">Zoom et déplacement du bout des doigts</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -165,6 +195,7 @@
         <p class="eyebrow left">Le Carnet du Capitaine</p>
         <h2 class="section-title engraved" id="carnet-titre">Vos plus belles prises, en souvenir</h2>
         <p>Chaque capture de votre journal devient une page-souvenir élégante — médaillon doré, galerie de photos, sceau de cire et signature — prête à sauvegarder ou à publier sur Instagram et Facebook en un tap.</p>
+        <p>Votre permis de pêche s'y range aussi : numéro, catégorie, dates et photo, toujours à portée de main. C'est un rappel personnel; gardez toujours votre permis officiel sur vous.</p>
         <p>Et votre carnet reste à vous : aucun compte, aucun serveur. Vos coins de pêche restent secrets.</p>
         <div class="panel" style="margin-top:26px">
           <div class="panel-head">Ce que vous consignez</div>
@@ -176,7 +207,7 @@
           </ul>
         </div>
       </div>
-      <div class="phone"><img src="assets/img/06_especes.webp" alt="Liste des espèces réglementées dans CaMordTu" width="620" height="1344" loading="lazy"></div>
+      <div class="phone"><img src="assets/img/app/fr-reglementation.webp" alt="Tarifs officiels des permis de pêche dans la section Réglementation" width="620" height="1342" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -188,13 +219,19 @@
     <h2 class="section-title engraved">Un vrai look de pourvoirie</h2>
     <p class="section-lead">Marine, or et cuivre : une app aussi belle au chalet que pratique sur l'eau.</p>
   </div>
-  <div class="shots">
-    <figure><img src="assets/img/01_accueil.webp" alt="Écran d'accueil" width="230" height="498" loading="lazy"><figcaption>Accueil</figcaption></figure>
-    <figure><img src="assets/img/02_menu.webp" alt="Menu principal" width="230" height="498" loading="lazy"><figcaption>Menu</figcaption></figure>
-    <figure><img src="assets/img/03_bathymetrie.webp" alt="Carte de profondeur du lac Memphrémagog" width="230" height="498" loading="lazy"><figcaption>Bathymétrie</figcaption></figure>
-    <figure><img src="assets/img/06_especes.webp" alt="Fiches des espèces" width="230" height="498" loading="lazy"><figcaption>Espèces</figcaption></figure>
-    <figure><img src="assets/img/04_histoires_liste.webp" alt="Liste des histoires et légendes" width="230" height="498" loading="lazy"><figcaption>Histoires</figcaption></figure>
-    <figure><img src="assets/img/05_histoire_detail.webp" alt="Lecture d'une légende" width="230" height="498" loading="lazy"><figcaption>Légendes</figcaption></figure>
+  <div class="shots eight">
+    <figure><img src="assets/img/app/fr-menu.webp" alt="Menu principal" width="230" height="498" loading="lazy"><figcaption>Menu</figcaption></figure>
+    <figure><img src="assets/img/app/fr-zone.webp" alt="Ma zone détectée par GPS" width="230" height="498" loading="lazy"><figcaption>Ma zone</figcaption></figure>
+    <figure><img src="assets/img/app/fr-reglementation.webp" alt="Réglementation et permis" width="230" height="498" loading="lazy"><figcaption>Règlements</figcaption></figure>
+    <figure><img src="assets/img/app/fr-rivieres.webp" alt="Liste des 45 rivières" width="230" height="498" loading="lazy"><figcaption>Rivières</figcaption></figure>
+    <figure><img src="assets/img/app/fr-riviere.webp" alt="Fiche de la rivière Batiscan" width="230" height="498" loading="lazy"><figcaption>Rivière</figcaption></figure>
+    <figure><img src="assets/img/app/fr-plan.webp" alt="Plan hors ligne de la rivière Batiscan" width="230" height="498" loading="lazy"><figcaption>Plan hors ligne</figcaption></figure>
+    <figure><img src="assets/img/app/fr-techniques.webp" alt="Les techniques de pêche" width="230" height="498" loading="lazy"><figcaption>Techniques</figcaption></figure>
+    <figure><img src="assets/img/app/fr-technique.webp" alt="Fiche de la pêche à la mouche" width="230" height="498" loading="lazy"><figcaption>Mouche</figcaption></figure>
+    <figure><img src="assets/img/app/fr-pourvoiries.webp" alt="Pourvoiries classées par région, espèce et aventure" width="230" height="498" loading="lazy"><figcaption>Pourvoiries</figcaption></figure>
+    <figure><img src="assets/img/app/fr-profondeur.webp" alt="Carte de profondeur du lac Memphrémagog" width="230" height="498" loading="lazy"><figcaption>Profondeur</figcaption></figure>
+    <figure><img src="assets/img/app/fr-especes.webp" alt="Les 31 espèces réglementées" width="230" height="498" loading="lazy"><figcaption>Espèces</figcaption></figure>
+    <figure><img src="assets/img/app/fr-legende.webp" alt="Une légende à écouter" width="230" height="498" loading="lazy"><figcaption>Légendes</figcaption></figure>
   </div>
 </section>
 
@@ -221,7 +258,7 @@
       <a class="btn-gold solid" href="https://apps.apple.com/ca/app/camordtu/id6815033212"><svg class="appstore-icon"><use href="#i-apple"/></svg>Télécharger sur l'App Store</a>
     </div>
     <div class="req-grid">
-      <div class="req"><div class="label">Appareil</div><div class="value">iPhone</div></div>
+      <div class="req"><div class="label">Appareils</div><div class="value">iPhone et iPad</div></div>
       <div class="req"><div class="label">Système</div><div class="value">iOS 17 ou +</div></div>
       <div class="req"><div class="label">Réseau</div><div class="value">100 % hors ligne</div></div>
       <div class="req"><div class="label">Langues</div><div class="value">Français / English</div></div>

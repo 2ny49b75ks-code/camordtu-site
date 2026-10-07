@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CaMordTu — Quebec Fishing App: Zones, Regulations, Lakes</title>
-<meta name="description" content="The iPhone fishing app for Quebec: your zone and its rules by GPS, 3,224 lakes, depth maps, species, lures and outfitters — 100% offline. $6.99.">
+<meta name="description" content="The iPhone and iPad fishing app for Quebec: your zone and its rules by GPS, 3,224 lakes, depth maps, species, lures and outfitters — 100% offline. $6.99.">
 <meta name="theme-color" content="#173060">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -32,7 +32,7 @@
   "fr-CA",
   "en"
  ],
- "description": "The iPhone fishing app for Quebec: your zone and its rules by GPS, 3,224 lakes, depth maps, species, lures and outfitters — 100% offline. $6.99.",
+ "description": "The iPhone and iPad fishing app for Quebec: your zone and its rules by GPS, 3,224 lakes, depth maps, species, lures and outfitters — 100% offline. $6.99.",
  "url": "https://camordtu.netlify.app/en.html",
  "image": "https://camordtu.netlify.app/assets/img/logo.png",
  "installUrl": "https://apps.apple.com/ca/app/camordtu/id6815033212",
@@ -80,6 +80,9 @@
   <symbol id="i-fire" viewBox="0 0 64 64"><g fill="none" stroke-linejoin="round" stroke-linecap="round"><path d="M32 8c4 10 14 14 12 26-1 8-6 12-12 12s-12-4-12-12c0-6 4-8 5-14 3 4 4 6 5 8 2-6 4-12 2-20z" stroke="#de9e73" stroke-width="3" fill="rgba(222,158,115,.25)"/><path d="M10 56l44-8M10 48l44 8" stroke="url(#g)" stroke-width="3.5"/></g></symbol>
   <symbol id="i-lock" viewBox="0 0 64 64"><g fill="none" stroke="url(#g)" stroke-width="3" stroke-linejoin="round"><rect x="12" y="28" width="40" height="28" rx="5"/><path d="M20 28v-8a12 12 0 0124 0v8"/><path d="M32 38v8" stroke-linecap="round"/></g></symbol>
   <symbol id="i-mail" viewBox="0 0 64 64"><g fill="none" stroke="url(#g)" stroke-width="3" stroke-linejoin="round"><rect x="8" y="14" width="48" height="36" rx="5"/><path d="M8 18l24 18 24-18"/></g></symbol>
+  <symbol id="i-river" viewBox="0 0 64 64"><g fill="none" stroke="url(#g)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8c18 4 22 12 10 20S8 44 26 56"/><path d="M40 10l10 4-4 10"/><path d="M50 14C40 18 34 22 36 28"/></g><circle cx="46" cy="46" r="7" fill="#c9302c" stroke="#f7e8bd" stroke-width="2"/></symbol>
+  <symbol id="i-rod" viewBox="0 0 64 64"><g fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="14" r="5"/><path d="M16 19v16l-6 12M16 35l8 12M16 26l10-4"/><path d="M26 22L58 6"/><path d="M58 6v26"/><path d="M6 56c8-4 14-4 22 0s14 4 22 0"/></g></symbol>
+  <symbol id="i-buoy" viewBox="0 0 64 64"><g fill="none" stroke="url(#g)" stroke-width="3"><circle cx="32" cy="32" r="22"/><circle cx="32" cy="32" r="10"/></g><g stroke="#de9e73" stroke-width="9" fill="none"><path d="M18 18l7 7M46 18l-7 7M18 46l7-7M46 46l-7-7"/></g></symbol>
   <symbol id="i-bullet" viewBox="0 0 64 24"><path d="M2 12c8-8 22-10 34-6 6 2 12 4 16 6-4 2-10 4-16 6-12 4-26 2-34-6z" fill="#c7a638"/><path d="M52 12l10-8v16z" fill="#c7a638"/><circle cx="12" cy="10.5" r="1.8" fill="#0d1f45"/></symbol>
 </svg>
 
@@ -118,9 +121,10 @@
         <ul class="hero-bullets">
           <li><svg viewBox="0 0 64 24"><use href="#i-bullet"/></svg>Thousands of lakes, rivers and outfitters</li>
           <li><svg viewBox="0 0 64 24"><use href="#i-bullet"/></svg>Fishing rules for your zone</li>
+          <li><svg viewBox="0 0 64 24"><use href="#i-bullet"/></svg>New: an offline plan for 45 rivers</li>
         </ul>
       </div>
-      <div class="phone"><img src="assets/img/en/01_welcome.webp" alt="CaMordTu app welcome screen" width="620" height="1342"></div>
+      <div class="phone"><img src="assets/img/app/en-welcome.webp" alt="CaMordTu app welcome screen" width="620" height="1342"></div>
     </div>
   </div>
 </section>
@@ -129,7 +133,7 @@
   <div class="wrap">
     <div class="num-grid">
       <div class="num"><b>3,224</b><span>lakes listed</span></div>
-      <div class="num"><b>30</b><span>major rivers</span></div>
+      <div class="num"><b>45</b><span>major rivers</span></div>
       <div class="num"><b>429</b><span>outfitters</span></div>
       <div class="num"><b>31</b><span>regulated species</span></div>
       <div class="num"><b>12</b><span>depth maps</span></div>
@@ -145,15 +149,41 @@
     <h2 class="section-title engraved">Everything you need on the water, in one app</h2>
     <p class="section-lead">Built to be used right on the boat or at the lakeshore, with no internet connection.</p>
     <div class="tile-grid">
-      <article class="tile"><svg class="icon"><use href="#i-zone"/></svg><h3>My zone</h3><p>GPS instantly detects which Quebec fishing zone you're in — computed on your phone, no signal needed.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-rules"/></svg><h3>Regulations</h3><p>Seasons, catch limits, length limits and permitted gear for every zone, with a direct link to the government's official table.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-lake"/></svg><h3>Lakes &amp; rivers</h3><p>3,224 lakes and the 30 major salmon, landlocked-salmon and trout rivers, with municipality, zone and species present.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-zone"/></svg><h3>My zone</h3><p>GPS instantly detects which Quebec fishing zone you're in, with the nearest lake and the zone's species — computed on your phone, no signal needed.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-rules"/></svg><h3>Regulations &amp; permits</h3><p>Rules by zone and by species: seasons, catch and length limits, permitted gear. Official permit prices, and buying one online in a single tap.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-lake"/></svg><h3>Lakes</h3><p>3,224 lakes with their municipality, zone, species and the regulations that apply.</p></article>
+      <article class="tile is-new"><span class="new-badge">New</span><svg class="icon"><use href="#i-river"/></svg><h3>Rivers &amp; offline plan</h3><p>45 major rivers, each with an offline plan: its real course, towns, falls, confluences and bridges, plus your GPS position — even with no signal.</p></article>
       <article class="tile"><svg class="icon"><use href="#i-depth"/></svg><h3>Bathymetry</h3><p>Depth maps of major waters — Memphrémagog, Champlain, Mégantic, Saint-Jean and more — to find holes and shoals.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-fish"/></svg><h3>Species</h3><p>31 regulated species, from walleye to muskellunge, with photos, habitat, size and fishing techniques.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-lure"/></svg><h3>Lures</h3><p>A lure guide plus an assistant that suggests the right pick for the species, season and today's conditions.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-cabin"/></svg><h3>Outfitters</h3><p>429 fishing outfitters across Quebec: contact info, species fished, one-tap calling and directions in Maps.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-book"/></svg><h3>Fishing log</h3><p>Record your catches — species, spot, size, lure, photos — in a private log that never leaves your phone.</p></article>
-      <article class="tile"><svg class="icon"><use href="#i-fire"/></svg><h3>Tales &amp; legends</h3><p>Thirty Quebec fishing tales and legends to read by the campfire between outings.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-fish"/></svg><h3>Species</h3><p>31 regulated species, from walleye to muskellunge, with photos, recommended lures, lakes to fish them and an angler's secret.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-lure"/></svg><h3>Lures</h3><p>A guide to 8 lure families and the “Find my lure” assistant, which weighs the season, weather, species, water body and depth.</p></article>
+      <article class="tile is-new"><span class="new-badge">New</span><svg class="icon"><use href="#i-rod"/></svg><h3>Techniques</h3><p>Spin and cast, fly, trolling, ice fishing and boat fishing: the gear, how to handle your rod, and tips for beginners.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-cabin"/></svg><h3>Outfitters</h3><p>429 outfitters sorted into Quebec's 17 regions, by species, type of fishing and trip style, with calling, website and directions in one tap.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-book"/></svg><h3>Fishing log</h3><p>Your catches, photos and statistics by species, lake and lure, in a private log that never leaves your phone.</p></article>
+      <article class="tile is-new"><span class="new-badge">New</span><svg class="icon"><use href="#i-fire"/></svg><h3>Tales &amp; legends</h3><p>Thirty Quebec fishing tales to read or listen to: every story is narrated, in English and in French.</p></article>
+      <article class="tile"><svg class="icon"><use href="#i-buoy"/></svg><h3>Tips</h3><p>Safety on the water, from the first-aid kit to the 5BC fire extinguisher, plus advice from one angler to another.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="split" aria-labelledby="plan-title">
+  <div class="wrap">
+    <div class="split-grid reverse">
+      <div class="phone"><img src="assets/img/app/en-plan.webp" alt="Offline plan of the Batiscan River with its towns, falls and confluences" width="620" height="1342" loading="lazy"></div>
+      <div>
+        <p class="eyebrow left">New · Offline plan</p>
+        <h2 class="section-title engraved" id="plan-title">Find your way on the river, even with no signal</h2>
+        <p>Each of CaMordTu's 45 rivers now has its own plan built into the app: the river's real course, with its towns, waterfalls, confluences and bridges.</p>
+        <p>Tap “Locate me” and your GPS position appears on the plan, with your distance from the river. Nothing to download, nothing to load on site: it all works deep in the woods.</p>
+        <div class="panel" style="margin-top:26px">
+          <div class="panel-head">On every plan</div>
+          <ul>
+            <li class="plain">The river's full course</li>
+            <li class="plain">Towns, falls, confluences and bridges</li>
+            <li class="plain">Your position and a km scale</li>
+            <li class="plain">Pinch to zoom, drag to move</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -165,6 +195,7 @@
         <p class="eyebrow left">The Captain's Log</p>
         <h2 class="section-title engraved" id="log-title">Your best catches, kept for good</h2>
         <p>Every catch in your log becomes an elegant keepsake page — gold medallion, photo gallery, wax seal and signature — ready to save or post to Instagram and Facebook in one tap.</p>
+        <p>Your fishing permit fits in there too: number, category, dates and photo, always at hand. It's a personal reminder; always carry your official permit.</p>
         <p>And your log stays yours: no account, no server. Your fishing spots stay secret.</p>
         <div class="panel" style="margin-top:26px">
           <div class="panel-head">What you record</div>
@@ -176,7 +207,7 @@
           </ul>
         </div>
       </div>
-      <div class="phone"><img src="assets/img/en/06_species_sheet.webp" alt="Walleye species sheet in CaMordTu" width="620" height="1342" loading="lazy"></div>
+      <div class="phone"><img src="assets/img/app/en-regulations.webp" alt="Official fishing permit prices in the Regulations section" width="620" height="1342" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -189,14 +220,18 @@
     <p class="section-lead">Navy, gold and copper: an app as handsome at the cabin as it is handy on the water.</p>
   </div>
   <div class="shots eight">
-    <figure><img src="assets/img/en/01_welcome.webp" alt="Welcome screen" width="230" height="498" loading="lazy"><figcaption>Welcome</figcaption></figure>
-    <figure><img src="assets/img/en/02_menu.webp" alt="Main menu" width="230" height="498" loading="lazy"><figcaption>Menu</figcaption></figure>
-    <figure><img src="assets/img/en/03_outfitters_sorting.webp" alt="Outfitters sorted by region, species and type of fishing" width="230" height="498" loading="lazy"><figcaption>Outfitters</figcaption></figure>
-    <figure><img src="assets/img/en/04_lake_depth_map.webp" alt="Lake Memphrémagog depth map" width="230" height="498" loading="lazy"><figcaption>Depth map</figcaption></figure>
-    <figure><img src="assets/img/en/05_species.webp" alt="Regulated species list" width="230" height="498" loading="lazy"><figcaption>Species</figcaption></figure>
-    <figure><img src="assets/img/en/06_species_sheet.webp" alt="Walleye species sheet with recommended lures" width="230" height="498" loading="lazy"><figcaption>Walleye</figcaption></figure>
-    <figure><img src="assets/img/en/07_stories_list.webp" alt="Stories and legends list" width="230" height="498" loading="lazy"><figcaption>Tales</figcaption></figure>
-    <figure><img src="assets/img/en/08_story.webp" alt="Reading a legend" width="230" height="498" loading="lazy"><figcaption>Legends</figcaption></figure>
+    <figure><img src="assets/img/app/en-menu.webp" alt="Main menu" width="230" height="498" loading="lazy"><figcaption>Menu</figcaption></figure>
+    <figure><img src="assets/img/app/en-zone.webp" alt="My zone detected by GPS" width="230" height="498" loading="lazy"><figcaption>My zone</figcaption></figure>
+    <figure><img src="assets/img/app/en-regulations.webp" alt="Regulations and permits" width="230" height="498" loading="lazy"><figcaption>Regulations</figcaption></figure>
+    <figure><img src="assets/img/app/en-rivers.webp" alt="The 45 rivers" width="230" height="498" loading="lazy"><figcaption>Rivers</figcaption></figure>
+    <figure><img src="assets/img/app/en-river.webp" alt="Batiscan River page" width="230" height="498" loading="lazy"><figcaption>River</figcaption></figure>
+    <figure><img src="assets/img/app/en-plan.webp" alt="Offline plan of the Batiscan River" width="230" height="498" loading="lazy"><figcaption>Offline plan</figcaption></figure>
+    <figure><img src="assets/img/app/en-techniques.webp" alt="Fishing techniques" width="230" height="498" loading="lazy"><figcaption>Techniques</figcaption></figure>
+    <figure><img src="assets/img/app/en-technique.webp" alt="Fly fishing page" width="230" height="498" loading="lazy"><figcaption>Fly fishing</figcaption></figure>
+    <figure><img src="assets/img/app/en-outfitters.webp" alt="Outfitters sorted by region, species and trip style" width="230" height="498" loading="lazy"><figcaption>Outfitters</figcaption></figure>
+    <figure><img src="assets/img/app/en-depth.webp" alt="Lake Memphrémagog depth map" width="230" height="498" loading="lazy"><figcaption>Depth map</figcaption></figure>
+    <figure><img src="assets/img/app/en-species.webp" alt="The 31 regulated species" width="230" height="498" loading="lazy"><figcaption>Species</figcaption></figure>
+    <figure><img src="assets/img/app/en-story.webp" alt="A legend to listen to" width="230" height="498" loading="lazy"><figcaption>Legends</figcaption></figure>
   </div>
 </section>
 
@@ -223,7 +258,7 @@
       <a class="btn-gold solid" href="https://apps.apple.com/ca/app/camordtu/id6815033212?l=en"><svg class="appstore-icon"><use href="#i-apple"/></svg>Download on the App Store</a>
     </div>
     <div class="req-grid">
-      <div class="req"><div class="label">Device</div><div class="value">iPhone</div></div>
+      <div class="req"><div class="label">Devices</div><div class="value">iPhone and iPad</div></div>
       <div class="req"><div class="label">System</div><div class="value">iOS 17 or later</div></div>
       <div class="req"><div class="label">Network</div><div class="value">100% offline</div></div>
       <div class="req"><div class="label">Languages</div><div class="value">English / French</div></div>
